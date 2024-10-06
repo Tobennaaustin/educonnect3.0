@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-img {
+    width: 70px;
+}
+.logo-img2{
+    width: 200px;
+}
+@media screen and (max-width:450px){
+    .logo-img2{
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width:699px){
+    .logo-img2{
+        width: 150px;
+    }
+}
+
+.hmtl-style-custom {
+    scroll-behavior: smooth;
+    scroll-padding: 2px;
+}
+
+.about-us-custom-img {
+    width: 1000%;
+}
+
+.navbar.sticky {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.7s;
+    position: fixed;
+    width: 100%;
+    isolation: isolate;
+}

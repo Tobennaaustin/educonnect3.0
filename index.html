@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en" class="hmtl-style-custom">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title and Description for SEO -->
+  <title>EduConnect</title>
+  <meta name="description"
+      content=" Educonnect is the ultimate student resource hub. Unlock your potential. Discover a world of knowledge. Start
+      your journey today. Empower yourself with over 100+ courses, pdfs,Books etc to choose from.">
+
+  <!-- Keywords for SEO -->
+  <meta name="keywords"
+      content="eduConnect, student resource hub, university, student portal, student authentication, academic information, student profile, educational resources, university students, university, library, library online, library pdf, Books">
+
+  <!-- Author -->
+  <meta name="author" content="Teddy-Austin Tobenna">
+
+  <!-- Open Graph Meta Tags for social media sharing -->
+  <meta property="og:title" content="EduConnect - Your Ultimate Student Resource Hub">
+  <meta property="og:description"
+      content="Educonnect is the ultimate student resource hub. Unlock your potential. Discover a world of knowledge. Start
+      your journey today. Empower yourself with over 100+ courses, pdfs,Books etc to choose from.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.educonnect-azure.vercel.app">
+  <meta property="og:image" content="https://www.educonnect-azure.vercel.app/images/educonnect-og-image.jpg">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EduConnect - Your Ultimate Student Resource Hub">
+  <meta name="twitter:description"
+      content="EduConnect is the ultimate student resource hub for university students, offering authentication, personalized user pages, and settings to manage your profile and academic information.">
+  <meta name="twitter:image" content="https://www.educonnect-azure.vercel.app/images/educonnect-twitter-image.jpg">
+
+  <!-- Link to favicon -->
+  <link rel="icon" href="images/white-icon.jpg" type="image/x-icon">
+
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.educonnect-azure.vercel.app">
+
+
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/animate.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header>
+    <nav class="bg-white border-gray-200 px-4 lg:px-5 py-2.5 navbar  dark:bg-gray-900 wow animate__animated animate__slow  animate__lightSpeedInLeft">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <a href="index.html" class="flex items-center">
+          <img src="images/black-transperent-icon.png" class="mr-3 logo-img dark:hidden" alt="Educonnect logo"
+            id="logo" />
+          <img src="images/white-transperent-icon.png" class="mr-3 logo-img dark:block hidden" alt="Educonnect logo"
+            id="logo">
+          <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Educonnect</span> -->
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a href="#"
+            class="text-gray-800 dark:text-white dark:bg-indigo-400 hover:bg-gray-50 dark:hover:bg-indigo-300  focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none dark:focus:ring-gray-800">Log
+            in</a>
+          <a href="signup.html"
+            class="text-white bg-gray-900 hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-indigo-900 dark:hover:bg-indigo-800">Get
+            started</a>
+          <button data-collapse-toggle="mobile-menu-2" id="menu-button" type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-200 dark:bg-gray-600  md:hidden"
+            aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 " id="menu">
+          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <li>
+              <a href="#home"
+                class="block py-2 pr-4 pl-3 text-gray-700 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 ">Home</a>
+            </li>
+            <li>
+              <a href="#about"
+                class="block py-2 pr-4 pl-3 text-gray-700 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800 dark:border-gray-6 hover:bg-gray-50 dark:hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  dark:hover:text-white ">About</a>
+            </li>
+            <li>
+              <a href="#features"
+                class="block py-2 pr-4 pl-3 text-gray-700 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  dark:hover:text-white ">Features</a>
+            </li>
+            <li>
+              <a href="#news"
+                class="block py-2 pr-4 pl-3 text-gray-700  dark:text-gray-400 border-b border-gray-100 dark:border-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  dark:hover:text-white ">Newsletter</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="block py-2 pr-4 pl-3 text-gray-700 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800  hover:bg-gray-50 dark:hover:bg-gray-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  dark:hover:text-white ">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home section -->
+  <section class="text-gray-400  body-font dark:bg-slate-800" id="home">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-2/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-950 dark:text-white wow animate__animated  animate__fadeInLeft animate__slow">Educonnect, master
+          Creative Skills and Launch Your Career Now for Free.
+          <br class="hidden lg:inline-block underline">Yes FREE!!
+        </h1>
+        <p class="mb-8 leading-relaxed dark:text-slate-400 wow animate__animated animate__fadeInDown animate__slow">Unlock Your potential. Discover a world of knowledge. Start
+          your journey today. Empower yourself with over 100+ courses, pdfs,Books etc to choose from.
+
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg dark:bg-indigo-900  dark:hover:bg-indigo-800 wow animate__animated animate__bounceInUp animate__slow">Get
+            Started</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 wow animate__animated  animate__slideInRight animate__slow">
+        <img class="object-cover object-center rounded" alt="hero"
+          src="images/portrait-relaxed-man-sitting-desk-table-living-room-working-remote-from-home-financial-project-using-laptop-computer-online-webinar-freelancer-guy-having-business-lesson.jpg">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contributors section -->
+  <section class="py-24 bg-white dark:bg-gray-900">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-20 text-center">
+        <h1 class="text-4xl text-gray-900 dark:text-white text-center font-bold wow animate__animated animate__slideInDown animate__slow">Meet our top contributors</h1>
+      </div>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2  xl:grid-cols-4">
+        <a href="#"
+          class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl wow animate__animated animate__fadeInDown">
+          <img src="images/contributors1.0/coursera-svgrepo-com.svg" alt="">
+
+        </a>
+        <a href="#"
+          class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl wow animate__animated animate__fadeInDown">
+          <svg class="h-9" viewBox="0 0 142 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_8562_69354)">
+              <path
+                d="M58.7812 9V27H55.6562V12.875H55.6146L50.0312 27H47.9479L42.2396 12.875H42.1979V27H39.323V9H43.8229L48.9896 22.3333H49.0729L54.5312 9H58.7812ZM61.3646 10.375C61.3646 9.875 61.5312 9.45833 61.9062 9.125C62.2812 8.79167 62.6979 8.625 63.1979 8.625C63.7396 8.625 64.1979 8.79167 64.5312 9.125C64.8646 9.45833 65.0729 9.875 65.0729 10.375C65.0729 10.875 64.9062 11.2917 64.5312 11.625C64.1562 11.9583 63.7396 12.125 63.1979 12.125C62.6562 12.125 62.2396 11.9583 61.9062 11.625C61.5729 11.25 61.3646 10.8333 61.3646 10.375ZM64.7396 14.0833V27H61.6979V14.0833H64.7396ZM73.9479 24.7916C74.4062 24.7916 74.9062 24.7083 75.4479 24.4583C75.9896 24.25 76.4896 23.9583 76.9479 23.625V26.4583C76.4479 26.75 75.9062 26.9583 75.2812 27.0833C74.6562 27.2083 73.9896 27.2916 73.2396 27.2916C71.3229 27.2916 69.7812 26.7083 68.6146 25.5C67.4062 24.2917 66.8229 22.75 66.8229 20.9167C66.8229 18.8333 67.4479 17.125 68.6562 15.7917C69.8646 14.4583 71.5729 13.7917 73.8229 13.7917C74.4062 13.7917 74.9896 13.875 75.5312 14C76.1146 14.125 76.5729 14.3333 76.9062 14.5V17.4166C76.4479 17.0833 75.9479 16.7917 75.4896 16.625C74.9896 16.4583 74.4896 16.3333 73.9896 16.3333C72.7812 16.3333 71.8229 16.7083 71.0729 17.5C70.3229 18.2916 69.9896 19.3333 69.9896 20.6667C69.9896 21.9583 70.3646 23 71.0729 23.7083C71.7812 24.4167 72.7396 24.7916 73.9479 24.7916ZM85.5729 13.875C85.8229 13.875 86.0312 13.875 86.2396 13.9167C86.4479 13.9583 86.6146 14 86.7396 14.0417V17.125C86.5729 17 86.3646 16.875 86.0312 16.7916C85.6979 16.7083 85.3646 16.625 84.9062 16.625C84.1562 16.625 83.5312 16.9583 83.0312 17.5833C82.5312 18.2083 82.2396 19.1667 82.2396 20.5V27H79.1979V14.0833H82.2396V16.125H82.2812C82.5729 15.4167 82.9896 14.875 83.5312 14.4583C84.1146 14.0833 84.7812 13.875 85.5729 13.875ZM86.9062 20.75C86.9062 18.625 87.5312 16.9167 88.6979 15.6667C89.9062 14.4167 91.5729 13.7917 93.6979 13.7917C95.6979 13.7917 97.2813 14.375 98.4063 15.5833C99.5313 16.7917 100.115 18.4167 100.115 20.4583C100.115 22.5417 99.4896 24.2083 98.3229 25.4583C97.1146 26.7083 95.4896 27.3333 93.4063 27.3333C91.4063 27.3333 89.8229 26.75 88.6562 25.5833C87.4896 24.375 86.9062 22.75 86.9062 20.75ZM90.0729 20.625C90.0729 21.9583 90.3646 23 90.9896 23.7083C91.6146 24.4167 92.4896 24.7916 93.6146 24.7916C94.6979 24.7916 95.5729 24.4583 96.1563 23.7083C96.7396 23 97.0312 21.9583 97.0312 20.5416C97.0312 19.1666 96.7396 18.125 96.1563 17.375C95.5729 16.6667 94.6979 16.2917 93.6563 16.2917C92.5313 16.2917 91.6979 16.6666 91.0729 17.4166C90.3646 18.2083 90.0729 19.25 90.0729 20.625ZM104.656 17.5C104.656 17.9166 104.781 18.2916 105.073 18.5416C105.365 18.7916 105.948 19.0833 106.906 19.4583C108.115 19.9583 108.99 20.5 109.448 21.0833C109.948 21.7083 110.198 22.4167 110.198 23.2917C110.198 24.5 109.74 25.4583 108.781 26.2083C107.865 26.9583 106.573 27.2916 104.99 27.2916C104.448 27.2916 103.865 27.2083 103.198 27.0833C102.531 26.9583 101.99 26.7916 101.531 26.5833V23.5833C102.073 23.9583 102.698 24.2916 103.323 24.5C103.948 24.7083 104.531 24.8333 105.073 24.8333C105.74 24.8333 106.281 24.75 106.573 24.5417C106.906 24.3333 107.073 24.0417 107.073 23.5833C107.073 23.1667 106.906 22.8333 106.573 22.5C106.24 22.2083 105.573 21.875 104.656 21.5C103.531 21.0417 102.74 20.5 102.281 19.9166C101.823 19.3333 101.573 18.5833 101.573 17.6667C101.573 16.5 102.031 15.5416 102.948 14.7916C103.865 14.0416 105.073 13.6667 106.531 13.6667C106.99 13.6667 107.49 13.7083 108.031 13.8333C108.573 13.9583 109.073 14.0833 109.448 14.2083V17.1667C109.031 16.9167 108.573 16.6666 108.031 16.4583C107.49 16.25 106.948 16.1667 106.448 16.1667C105.865 16.1667 105.406 16.2917 105.115 16.5C104.823 16.7917 104.656 17.0833 104.656 17.5ZM111.49 20.75C111.49 18.625 112.115 16.9167 113.281 15.6667C114.49 14.4167 116.156 13.7917 118.281 13.7917C120.281 13.7917 121.865 14.375 122.99 15.5833C124.115 16.7917 124.698 18.4167 124.698 20.4583C124.698 22.5417 124.073 24.2083 122.906 25.4583C121.698 26.7083 120.073 27.3333 117.99 27.3333C115.99 27.3333 114.406 26.75 113.24 25.5833C112.115 24.375 111.49 22.75 111.49 20.75ZM114.656 20.625C114.656 21.9583 114.948 23 115.573 23.7083C116.198 24.4167 117.073 24.7916 118.198 24.7916C119.281 24.7916 120.156 24.4583 120.74 23.7083C121.323 23 121.615 21.9583 121.615 20.5416C121.615 19.1666 121.323 18.125 120.74 17.375C120.156 16.6667 119.281 16.2917 118.24 16.2917C117.115 16.2917 116.281 16.6666 115.656 17.4166C114.99 18.2083 114.656 19.25 114.656 20.625ZM134.823 16.5833H130.281V27H127.198V16.5833H125.031V14.0833H127.198V12.2917C127.198 10.9583 127.656 9.83333 128.531 8.95833C129.406 8.08333 130.531 7.66667 131.906 7.66667C132.281 7.66667 132.615 7.70833 132.906 7.70833C133.198 7.70833 133.448 7.79167 133.656 7.875V10.5C133.573 10.4583 133.365 10.375 133.115 10.2917C132.865 10.2083 132.573 10.1667 132.24 10.1667C131.615 10.1667 131.115 10.375 130.781 10.75C130.448 11.125 130.281 11.75 130.281 12.5V14.0417H134.823V11.125L137.865 10.2083V14.0417H140.948V16.5417H137.865V22.5833C137.865 23.375 138.031 23.9167 138.281 24.25C138.573 24.5833 139.031 24.75 139.656 24.75C139.823 24.75 140.031 24.7083 140.281 24.625C140.531 24.5417 140.74 24.4583 140.906 24.3333V26.8333C140.698 26.9583 140.406 27.0417 139.948 27.125C139.49 27.2083 139.073 27.25 138.615 27.25C137.323 27.25 136.365 26.9166 135.74 26.25C135.115 25.5833 134.781 24.5417 134.781 23.1667L134.823 16.5833Z"
+                fill="#737373" />
+              <path d="M14.5313 3H0.28125V17.25H14.5313V3Z" fill="#F25022" />
+              <path d="M30.2813 3H16.0312V17.25H30.2813V3Z" fill="#7FBA00" />
+              <path d="M14.5313 18.75H0.28125V33H14.5313V18.75Z" fill="#00A4EF" />
+              <path d="M30.2813 18.75H16.0312V33H30.2813V18.75Z" fill="#FFB900" />
+            </g>
+            <defs>
+              <clipPath id="clip0_8562_69354">
+                <rect width="141" height="36" fill="white" transform="translate(0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+
+        </a>
+        <a href="#"
+          class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl wow animate__animated animate__fadeInDown">
+          <img src="images/Contributors/gfg-new-logo.png" alt="" width="200px" height="200px">
+
+        </a>
+        <a href="#"
+          class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl wow animate__animated animate__fadeInDown">
+          <img src="images/Contributors/Udemy_logo.svg.png" alt="" width="200px" height="200px">
+
+        </a>
+        <a href="#"
+          class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl wow animate__animated animate__fadeInDown">
+          <img src="images/Contributors/W3Schools_logo.png" alt="" width="200px" height="200px">
+
+        </a>
+
+        <a href="#"
+          class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl wow animate__animated animate__fadeInDown">
+          <svg class="h-9" viewBox="0 0 134 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_8562_69365)">
+              <path
+                d="M129.174 29.8761H124.152V22.0122C124.152 20.137 124.119 17.723 121.541 17.723C118.925 17.723 118.525 19.7661 118.525 21.8757V29.8756H113.504V13.7042H118.324V15.9142H118.392C118.874 15.0893 119.571 14.4107 120.409 13.9508C121.247 13.4907 122.193 13.2665 123.148 13.3019C128.238 13.3019 129.176 16.6496 129.176 21.0048L129.174 29.8761ZM107.838 11.4936C107.261 11.4938 106.698 11.323 106.219 11.0028C105.739 10.6827 105.366 10.2277 105.145 9.69526C104.925 9.16282 104.867 8.57692 104.979 8.01163C105.092 7.44634 105.369 6.92703 105.776 6.5194C106.184 6.1118 106.703 5.83418 107.268 5.72164C107.834 5.60909 108.419 5.6667 108.952 5.88716C109.484 6.10762 109.939 6.48106 110.26 6.96019C110.58 7.43933 110.751 8.00274 110.751 8.57906C110.751 8.96175 110.676 9.34072 110.529 9.69426C110.383 10.0479 110.169 10.3691 109.898 10.6398C109.628 10.9104 109.306 11.1251 108.953 11.2717C108.599 11.4182 108.221 11.4936 107.838 11.4936ZM110.348 29.8761H105.322V13.7042H110.348V29.8761ZM131.677 1.00231H102.798C102.143 0.994911 101.511 1.24805 101.042 1.70609C100.573 2.16413 100.305 2.78961 100.298 3.44508V32.4439C100.305 33.0997 100.573 33.7256 101.042 34.1842C101.511 34.6427 102.142 34.8963 102.798 34.8893H131.677C132.334 34.8976 132.968 34.6447 133.439 34.1861C133.909 33.7277 134.179 33.101 134.188 32.4439V3.44298C134.179 2.78622 133.909 2.16003 133.438 1.702C132.967 1.24397 132.334 0.991554 131.677 1.00022V1.00231ZM86.6301 17.6074C84.1193 17.6074 82.6128 19.2838 82.6128 21.7266C82.6128 24.1694 84.1188 25.8474 86.6301 25.8474C89.1414 25.8474 90.651 24.1736 90.651 21.7266C90.651 19.2796 89.144 17.6074 86.6301 17.6074ZM95.2739 29.8667H90.651V27.7221H90.5824C90.0023 28.5022 89.2502 29.1378 88.3845 29.5795C87.5182 30.0212 86.5621 30.2569 85.5902 30.2684C80.7653 30.2684 77.5871 26.7863 77.5871 21.8621C77.5871 17.3396 80.3997 13.1868 85.0232 13.1868C87.1013 13.1868 89.0425 13.7554 90.1812 15.3315H90.2471V6.00972H95.2734L95.2739 29.8667ZM71.1397 19.9032C71.1491 19.4958 71.0759 19.0907 70.9247 18.7124C70.773 18.3341 70.546 17.9905 70.2578 17.7025C69.9695 17.4144 69.6259 17.1879 69.2477 17.0366C68.869 16.8853 68.4641 16.8123 68.0566 16.8222C67.1794 16.7677 66.3153 17.06 65.6515 17.6364C64.9877 18.2127 64.5771 19.0268 64.5081 19.9032H71.1397ZM75.3933 27.0693C74.559 28.0812 73.5097 28.8948 72.3223 29.4513C71.1344 30.0078 69.8377 30.2932 68.5264 30.2868C63.5048 30.2868 59.4845 26.9349 59.4845 21.7444C59.4845 16.5539 63.5043 13.2036 68.5264 13.2036C73.2199 13.2036 76.1633 16.5513 76.1633 21.7444V23.3188H64.5081C64.653 24.2118 65.1159 25.0222 65.8116 25.6008C66.5068 26.1793 67.3881 26.4871 68.2925 26.4672C69.0071 26.4629 69.7096 26.2797 70.3357 25.9345C70.9613 25.5894 71.4912 25.0932 71.8762 24.4911L75.3933 27.0693ZM25.474 13.7H30.2962V15.91H30.3648C30.8464 15.0848 31.5431 14.4059 32.3806 13.9458C33.218 13.4857 34.1647 13.2618 35.1195 13.2977C40.2117 13.2977 41.149 16.648 41.149 21.0006V29.8688H36.1275V22.0064C36.1275 20.1296 36.093 17.7172 33.5121 17.7172C30.902 17.7172 30.4992 19.7609 30.4992 21.8699V29.8667H25.4777L25.474 13.7ZM43.6954 6.01129H48.7169V20.273L54.408 13.6911H60.5646L53.9738 21.1779L60.426 29.8767H54.1145L48.7839 21.883H48.718V29.8756H43.6964L43.6954 6.01129ZM17.6681 13.6984H22.6897V29.8699H17.6681V13.6984ZM20.1789 5.65874C20.755 5.65884 21.3181 5.82978 21.7971 6.14993C22.2761 6.47007 22.6494 6.92504 22.8698 7.45738C23.0902 7.98966 23.1478 8.57535 23.0354 9.14038C22.9229 9.70541 22.6454 10.2244 22.238 10.6318C21.8305 11.0391 21.3115 11.3165 20.7465 11.4288C20.1814 11.5412 19.5957 11.4834 19.0635 11.263C18.5312 11.0425 18.0763 10.6691 17.7563 10.1901C17.4362 9.71105 17.2653 9.14786 17.2653 8.57174C17.2653 8.18916 17.3407 7.81035 17.4871 7.45686C17.6335 7.10341 17.8482 6.78224 18.1187 6.51176C18.3893 6.24128 18.7105 6.02669 19.0639 5.88033C19.4174 5.73397 19.7963 5.65867 20.1789 5.65874ZM0.453125 6.01495H5.68023V25.0549H15.3572V29.8788H0.453125V6.01495Z"
+                fill="#0A66C2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_8562_69365">
+                <rect width="134" height="36" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About section -->
+  <section class="py-24  xl:mr-0 lg:mr-5 mr-0 dark:bg-slate-800 bg-indigo-100" id="about">
+    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+      <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+        <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+          <div class="w-full flex-col justify-center items-start gap-8 flex">
+            <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
+              <h6 class="text-gray-400 text-base font-normal leading-relaxed wow animate__animated animate__fadeInLeft animate__slow">About Us</h6>
+              <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                <h2 class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center dark:text-white wow animate__animated animate__fadeInLeft animate__slow">
+                  Fueling Knowledge for Every Journey</h2>
+                <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center wow animate__animated animate__fadeInLeft animate__slow">
+                  EduConnect is a platform where students and lifelong learners can access a wide range
+                  of resources, including books, articles, and online courses. Our goal is to support learning
+                  for academic success and personal development. We provide materials
+                  that cater to everyday needs and encourage continuous growth.
+                  Explore, learn, and share knowledge with our community!</p>
+              </div>
+            </div>
+            <div class="w-full flex-col justify-center items-start gap-6 flex">
+              <div class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                <div
+                  class="w-full h-full p-3.5 rounded-xl border bg-white border-gray-300 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex wow animate__animated  animate__slow animate__fadeInDown">
+                  <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">33+ Years</h4>
+                  <p class="text-gray-500 text-base font-normal leading-relaxed">Influencing Digital
+                    Landscapes Together</p>
+                </div>
+                <div
+                  class="w-full h-full p-3.5 rounded-xl border bg-white border-gray-300 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex wow animate__animated  animate__slow animate__fadeInDown">
+                  <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">125+ Projects
+                  </h4>
+                  <p class="text-gray-500 text-base font-normal leading-relaxed">Excellence Achieved
+                    Through Success</p>
+                </div>
+              </div>
+              <div class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                <div
+                  class="w-full p-3.5 rounded-xl border bg-white border-gray-300 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex wow animate__animated  animate__slow animate__fadeInDown">
+                  <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">26+ Awards</h4>
+                  <p class="text-gray-500 text-base font-normal leading-relaxed">Our Dedication to
+                    Innovation Wins Understanding</p>
+                </div>
+                <div
+                  class="w-full h-full p-3.5 rounded-xl border bg-white  border-gray-300 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex wow animate__animated  animate__slow animate__fadeInDown">
+                  <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">99% Happy
+                    Clients</h4>
+                  <p class="text-gray-500 text-base font-normal leading-relaxed">Mirrors our Focus on
+                    Client Satisfaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="sm:w-fit w-full group px-3.5 py-2 bg-gray-900 hover:bg-gray-800  rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex dark:bg-indigo-900 dark:hover:bg-indigo-800 wow animate__animated  animate__slow animate__fadeInUp">
+            <span
+              class="px-1.5 text-white text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">Read
+              More</span>
+            <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="#ffffff" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full lg:justify-start justify-center items-start flex">
+          <div class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 wow animate__animated animate__fadeInRight animate__slow">
+            <img class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
+              src="images/four-happy-students-near-university-campus.jpg" alt="about Us image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features section -->
+  <section class="text-gray-600 dark:text-white body-font dark:bg-gray-900" id="features">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+
+      <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+        <div class="flex flex-col mb-10 lg:items-start items-center wow animate__animated animate__slow animate__bounceInLeft">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 dark:bg-indigo-900 text-white mb-5">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:none;"
+              stroke="currentColor">
+              <path d="M21 10h-2V4h1V2H4v2h1v6H3a1 1 0 0 0-1 1v9h20v-9a1 1 0 0 0-1-1zm-7 8v-4h-4v4H7V4h10v14h-3z">
+              </path>
+              <path d="M9 6h2v2H9zm4 0h2v2h-2zm-4 4h2v2H9zm4 0h2v2h-2z"></path>
+            </svg>
+
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Learn and Grow</h2>
+            <p class="leading-relaxed text-base">Unlock access to a wide range of learning materials and resources to
+              help you master new skills and advance your knowledge—all in one place.</p>
+
+          </div>
+        </div>
+        <div class="flex flex-col mb-10 lg:items-start items-center wow animate__animated animate__slow animate__bounceInLeft">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 dark:bg-indigo-900 text-white mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:none;"
+              stroke="currentColor">
+              <path
+                d="M5.5 15a3.51 3.51 0 0 0 2.36-.93l6.26 3.58a3.06 3.06 0 0 0-.12.85 3.53 3.53 0 1 0 1.14-2.57l-6.26-3.58a2.74 2.74 0 0 0 .12-.76l6.15-3.52A3.49 3.49 0 1 0 14 5.5a3.35 3.35 0 0 0 .12.85L8.43 9.6A3.5 3.5 0 1 0 5.5 15zm12 2a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5zm0-13A1.5 1.5 0 1 1 16 5.5 1.5 1.5 0 0 1 17.5 4zm-12 6A1.5 1.5 0 1 1 4 11.5 1.5 1.5 0 0 1 5.5 10z">
+              </path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Share the Knowledge</h2>
+            <p class="leading-relaxed text-base">Easily share our resources with others and help spread the knowledge!
+            </p>
+
+          </div>
+        </div>
+        <div class="flex flex-col mb-10 lg:items-start items-center wow animate__animated animate__slow animate__bounceInLeft">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-900 dark:bg-indigo-900 text-white mb-5 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: none;"
+              stroke="currentColor">
+              <path
+                d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z">
+              </path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Contribute to Our Library</h2>
+            <p class="leading-relaxed text-base">Contribute to our growing library by sharing your own resources and
+              help others learn and grow!</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden wow animate__animated animate__slow animate__bounceInRight">
+        <img alt="feature" class="object-cover object-center h-full w-full" src="images/4077407.jpg">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- news letter section -->
+  <section id="news" class="dark:bg-slate-800 bg-indigo-100">
+    <div class="  overflow-hidden  py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+          <div class="max-w-xl lg:max-w-lg wow animate__animated animate__slow animate__zoomIn">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+            <p class="mt-4 text-lg leading-8 text-gray-400 ">Subscribe to our newsletter to stay updated!
+              Be the first to know whenever we add new resources to our library.</p>
+            <div class="mt-6 flex max-w-md gap-x-4">
+              <form>
+                <label for="email-address" class="sr-only">Email address</label>
+                <input id="email-address" name="email" type="email" autocomplete="email" required
+                  class="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                  placeholder="Enter your email">
+                <button type="submit"
+                  class="flex-none rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:bg-indigo-900 dark:hover:bg-indigo-800">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2 ">
+            <div class="flex flex-col items-start wow animate__animated animate__slow animate__fadeInDown">
+              <div class="rounded-md bg-gray-900 p-2 ring-1 ring-white/10 dark:bg-indigo-900 dark:ring-white">
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-gray-900 dark:text-white">Weekly articles</dt>
+              <dd class="mt-2 leading-7 text-gray-400">Get insightful weekly articles delivered straight to your inbox,
+                covering topics that inspire learning and personal growth.</dd>
+            </div>
+            <div class="flex flex-col items-start wow animate__animated animate__slow animate__fadeInDown">
+              <div class="rounded-md bg-gray-900 p-2 ring-1 ring-white/10 dark:bg-indigo-900 dark:ring-white">
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-gray-900 dark:text-white">No spam</dt>
+              <dd class="mt-2 leading-7 text-gray-400">Don’t worry, we respect your inbox. No spam—just valuable content
+                and updates!</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact us section -->
+  <section class="py-24 dark:bg-gray-900" id="contact">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 grid-cols-1">
+        <div class="lg:mb-0 mb-10 wow animate__animated animate__slow  animate__lightSpeedInLeft animate__slideInLeft">
+          <div class="group w-full h-full">
+            <div class=" h-full">
+              <img src="https://pagedone.io/asset/uploads/1696488602.png" alt="ContactUs tailwind section"
+                class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl wow animate__animated animate__slow  animate__lightSpeedInLeft animate__slideInRight">
+          <h2 class="text-gray-900 font-manrope text-4xl font-semibold leading-10 mb-11">Send Us A Message</h2>
+          <form>
+            <input type="text" required
+              class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-xl border border-gray-200 focus:outline-none pl-4 mb-10"
+              placeholder="Name">
+            <input type="text" required
+              class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-xl border border-gray-200 focus:outline-none pl-4 mb-10"
+              placeholder="Email">
+            <input type="text" required
+              class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-xl border border-gray-200 focus:outline-none pl-4 mb-10"
+              placeholder="Phone">
+            <input type="text" required
+              class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-xl border border-gray-200 focus:outline-none pl-4 mb-10"
+              placeholder="Message">
+            <button type="submit"
+              class="w-full h-12 text-white text-base font-semibold leading-6 rounded-xl transition-all duration-700 bg-gray-900 hover:bg-gray-800 shadow-sm dark:bg-indigo-900 dark:hover:bg-indigo-800">Send</button>
+          </form>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Footer section -->
+
+  <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-gray-950">
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+      <div class="grid grid-cols-2 md:grid-cols-2 items-center gap-1">
+        <a href="index.html">
+          <img src="images/white-logo.png" alt="" class="ml-2 logo-img2">
+        </a>
+      </div>
+      <!-- End Col -->
+
+      <ul class="text-center">
+        <li
+          class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+            href="#about">
+            About
+          </a>
+        </li>
+        <li
+          class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+            href="#features">
+            Features
+          </a>
+        </li>
+        <li
+          class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+            href="#news">
+            Newsletter
+          </a>
+        </li>
+
+      </ul>
+      <!-- End Col -->
+
+      <!-- Copy rights -->
+      <div class="md:text-end space-x-2">
+        <p class="mr-4 text-gray-500 dark:text-neutral-500">&copy; 2024 EduConnect</p>
+      </div>
+    </div>
+    <!-- End Grid -->
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+</body>
+
+</html>
